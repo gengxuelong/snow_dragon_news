@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.NewsMapper">
+    <insert id="addAll" parameterType="UserEntity">
+        insert into news value
+        <foreach collection="list" separator="," item="newsEntity">
+            (null,#{newsEntity.content},#{newsEntity.news_time},#{newsEntity.title},#{newsEntity.module_id},#{newsEntity.url})
+        </foreach>
+    </insert>
+
+    <insert id="addOne" parameterType="UserEntity">
+        insert into news value
+            (null,#{content},#{news_time},#{title},#{module_id},#{url})
+    </insert>
+    <delete id="deleteAll">
+      delete from news where 1=1
+    </delete>
+    <delete id="deleteNews" parameterType="Long">
+        delete from news where id = #{id}
+    </delete>
+    <select id="getNum" resultType="int">
+        select count(*) from news
+    </select>
+    <select id="getNewsByLimit" parameterType="int" resultType="NewsEntity">
+        select * from news limit #{start},#{num}
+    </select>
+    <select id="getNewsById" parameterType="Long" resultType="NewsEntity">
+        select * from news where id = #{id}
+    </select>
+
+    <select id="getNumByTitleLike" parameterType="string" resultType="int">
+        select count(*) from news where title like #{title}
+    </select>
+    <select id="getNewsByTitleByLimit"  resultType="NewsEntity">
+        select * from news where title like #{title} limit #{start},#{num}
+    </select>
+    <select id="getNewsByModule_idByLimitByTime"  resultType="NewsEntity">
+        select * from news where module_id = #{module_id} and  to_days(NOW()) - TO_DAYS(news_time)  &lt; 1 order by news_time desc  limit #{num}
+    </select>
+    <select id="getNewsByLimitByTime"  resultType="NewsEntity">
+        select * from news where  to_days(NOW()) - TO_DAYS(news_time)  &lt; 1 order by news_time desc  limit #{num}
+    </select>
+
+    <select id="getNumByModule_id" parameterType="int" resultType="int">
+        select count(*) from news where module_id =  #{module_id}
+    </select>
+    <select id="getNewsByModule_idByLimit"  resultType="NewsEntity">
+        select * from news where module_id =  #{module_id} limit #{start},#{num}
+    </select>
+    <select id="getNewsByPrecise" parameterType="long" resultType="NewsEntity">
+        select * from news n,recommendations r
+        where n.id=r.news_id and r.user_id = #{user_id}
+    </select>
+    <update id="updateNews" parameterType="NewsEntity">
+        update news set content = #{content},title = #{title},module_id=#{module_id} where id = #{id}
+    </update>
+</mapper>

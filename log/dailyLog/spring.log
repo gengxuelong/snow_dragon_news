@@ -1,0 +1,325 @@
+2022-08-03 17:53:26.741  INFO 16188 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 1.8.0_131 on DESKTOP-2R7Q184 with PID 16188 (D:\file for\file for java\java_javaEE\newPush2\target\classes started by Lenovo in D:\file for\file for java\java_javaEE\newPush2)
+2022-08-03 17:53:26.741  INFO 16188 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-08-03 17:53:27.476  INFO 16188 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-08-03 17:53:27.476  INFO 16188 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-08-03 17:53:27.507  INFO 16188 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
+2022-08-03 17:53:28.257  INFO 16188 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-08-03 17:53:28.257  INFO 16188 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.33] using APR version [1.7.0].
+2022-08-03 17:53:28.257  INFO 16188 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-08-03 17:53:28.257  INFO 16188 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-08-03 17:53:28.273  INFO 16188 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1o  3 May 2022]
+2022-08-03 17:53:28.273  INFO 16188 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-03 17:53:28.273  INFO 16188 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-03 17:53:28.429  INFO 16188 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-03 17:53:28.429  INFO 16188 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1641 ms
+2022-08-03 17:53:29.595  WARN 16188 --- [main] com.zaxxer.hikari.HikariConfig           : gengxuelong_pool - idleTimeout is close to or more than maxLifetime, disabling it.
+2022-08-03 17:53:29.595  INFO 16188 --- [main] com.zaxxer.hikari.HikariDataSource       : gengxuelong_pool - Starting...
+2022-08-03 17:53:30.072  INFO 16188 --- [main] com.zaxxer.hikari.HikariDataSource       : gengxuelong_pool - Start completed.
+2022-08-03 17:53:30.404  INFO 16188 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-08-03 17:53:30.783  INFO 16188 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2022-08-03 17:53:30.798  INFO 16188 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2022-08-03 17:53:30.798  INFO 16188 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.2.2 created.
+2022-08-03 17:53:30.798  INFO 16188 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2022-08-03 17:53:30.798  INFO 16188 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.2.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2022-08-03 17:53:30.798  INFO 16188 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2022-08-03 17:53:30.798  INFO 16188 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.2.2
+2022-08-03 17:53:30.798  INFO 16188 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@530ee28b
+2022-08-03 17:53:30.845  INFO 16188 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-08-03 17:53:30.845  INFO 16188 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2022-08-03 17:53:30.845  INFO 16188 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2022-08-03 17:53:30.861  INFO 16188 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 4.605 seconds (JVM running for 5.486)
+2022-08-03 17:54:16.283  INFO 19200 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 1.8.0_131 on DESKTOP-2R7Q184 with PID 19200 (D:\file for\file for java\java_javaEE\newPush2\target\classes started by Lenovo in D:\file for\file for java\java_javaEE\newPush2)
+2022-08-03 17:54:16.283  INFO 19200 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-08-03 17:54:16.908  INFO 19200 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-08-03 17:54:16.908  INFO 19200 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-08-03 17:54:16.940  INFO 19200 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+2022-08-03 17:54:17.643  INFO 19200 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-08-03 17:54:17.643  INFO 19200 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.33] using APR version [1.7.0].
+2022-08-03 17:54:17.643  INFO 19200 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-08-03 17:54:17.643  INFO 19200 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-08-03 17:54:17.643  INFO 19200 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1o  3 May 2022]
+2022-08-03 17:54:17.658  INFO 19200 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-03 17:54:17.658  INFO 19200 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-03 17:54:17.798  INFO 19200 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-03 17:54:17.798  INFO 19200 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1468 ms
+2022-08-03 17:54:18.753  WARN 19200 --- [main] com.zaxxer.hikari.HikariConfig           : gengxuelong_pool - idleTimeout is close to or more than maxLifetime, disabling it.
+2022-08-03 17:54:18.753  INFO 19200 --- [main] com.zaxxer.hikari.HikariDataSource       : gengxuelong_pool - Starting...
+2022-08-03 17:54:19.194  INFO 19200 --- [main] com.zaxxer.hikari.HikariDataSource       : gengxuelong_pool - Start completed.
+2022-08-03 17:54:19.500  INFO 19200 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-08-03 17:54:19.862  INFO 19200 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2022-08-03 17:54:19.878  INFO 19200 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2022-08-03 17:54:19.878  INFO 19200 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.2.2 created.
+2022-08-03 17:54:19.878  INFO 19200 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2022-08-03 17:54:19.878  INFO 19200 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.2.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2022-08-03 17:54:19.878  INFO 19200 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2022-08-03 17:54:19.878  INFO 19200 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.2.2
+2022-08-03 17:54:19.878  INFO 19200 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@7739aac4
+2022-08-03 17:54:19.925  INFO 19200 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-08-03 17:54:19.925  INFO 19200 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2022-08-03 17:54:19.925  INFO 19200 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2022-08-03 17:54:19.940  INFO 19200 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 4.039 seconds (JVM running for 4.909)
+2022-08-03 17:59:33.520  INFO 13428 --- [main] com.example.demo.DemoApplicationTests    : Starting DemoApplicationTests using Java 1.8.0_131 on DESKTOP-2R7Q184 with PID 13428 (started by Lenovo in D:\file for\file for java\java_javaEE\newPush2)
+2022-08-03 17:59:33.520  INFO 13428 --- [main] com.example.demo.DemoApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2022-08-03 17:59:34.505  INFO 13428 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-08-03 17:59:34.510  INFO 13428 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-08-03 17:59:34.562  INFO 13428 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24 ms. Found 0 Redis repository interfaces.
+2022-08-03 17:59:37.770  WARN 13428 --- [main] com.zaxxer.hikari.HikariConfig           : gengxuelong_pool - idleTimeout is close to or more than maxLifetime, disabling it.
+2022-08-03 17:59:37.770  INFO 13428 --- [main] com.zaxxer.hikari.HikariDataSource       : gengxuelong_pool - Starting...
+2022-08-03 17:59:38.247  INFO 13428 --- [main] com.zaxxer.hikari.HikariDataSource       : gengxuelong_pool - Start completed.
+2022-08-03 17:59:39.045  INFO 13428 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-08-03 17:59:39.682  INFO 13428 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2022-08-03 17:59:39.698  INFO 13428 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2022-08-03 17:59:39.698  INFO 13428 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.2.2 created.
+2022-08-03 17:59:39.698  INFO 13428 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2022-08-03 17:59:39.698  INFO 13428 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.2.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2022-08-03 17:59:39.698  INFO 13428 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2022-08-03 17:59:39.698  INFO 13428 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.2.2
+2022-08-03 17:59:39.698  INFO 13428 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@543b0737
+2022-08-03 17:59:39.809  INFO 13428 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2022-08-03 17:59:39.809  INFO 13428 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2022-08-03 17:59:39.825  INFO 13428 --- [main] com.example.demo.DemoApplicationTests    : Started DemoApplicationTests in 6.703 seconds (JVM running for 7.99)
+2022-08-03 17:59:55.313  INFO 13428 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2022-08-03 17:59:55.313  INFO 13428 --- [SpringApplicationShutdownHook] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2022-08-03 17:59:55.313  INFO 13428 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2022-08-03 17:59:55.313  INFO 13428 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2022-08-03 17:59:55.313  INFO 13428 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2022-08-03 17:59:55.345  INFO 13428 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : gengxuelong_pool - Shutdown initiated...
+2022-08-03 17:59:55.360  INFO 13428 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : gengxuelong_pool - Shutdown completed.
+2022-08-03 18:13:33.546  INFO 22944 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 1.8.0_131 on DESKTOP-2R7Q184 with PID 22944 (D:\file for\file for java\java_javaEE\newPush2\target\classes started by Lenovo in D:\file for\file for java\java_javaEE\newPush2)
+2022-08-03 18:13:33.562  INFO 22944 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-08-03 18:13:34.128  INFO 22944 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-08-03 18:13:34.128  INFO 22944 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-08-03 18:13:34.159  INFO 22944 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+2022-08-03 18:13:34.796  INFO 22944 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-08-03 18:13:34.796  INFO 22944 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.33] using APR version [1.7.0].
+2022-08-03 18:13:34.796  INFO 22944 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-08-03 18:13:34.796  INFO 22944 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-08-03 18:13:34.796  INFO 22944 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1o  3 May 2022]
+2022-08-03 18:13:34.796  INFO 22944 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-03 18:13:34.796  INFO 22944 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-03 18:13:34.939  INFO 22944 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-03 18:13:34.939  INFO 22944 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1362 ms
+2022-08-03 18:13:35.879  WARN 22944 --- [main] com.zaxxer.hikari.HikariConfig           : gengxuelong_pool - idleTimeout is close to or more than maxLifetime, disabling it.
+2022-08-03 18:13:35.879  INFO 22944 --- [main] com.zaxxer.hikari.HikariDataSource       : gengxuelong_pool - Starting...
+2022-08-03 18:13:36.356  INFO 22944 --- [main] com.zaxxer.hikari.HikariDataSource       : gengxuelong_pool - Start completed.
+2022-08-03 18:13:36.671  INFO 22944 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-08-03 18:13:37.003  INFO 22944 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2022-08-03 18:13:37.018  INFO 22944 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2022-08-03 18:13:37.018  INFO 22944 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.2.2 created.
+2022-08-03 18:13:37.018  INFO 22944 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2022-08-03 18:13:37.018  INFO 22944 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.2.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2022-08-03 18:13:37.018  INFO 22944 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2022-08-03 18:13:37.018  INFO 22944 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.2.2
+2022-08-03 18:13:37.018  INFO 22944 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@36c07c75
+2022-08-03 18:13:37.065  INFO 22944 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-08-03 18:13:37.065  INFO 22944 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2022-08-03 18:13:37.065  INFO 22944 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2022-08-03 18:13:37.081  INFO 22944 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 3.894 seconds (JVM running for 4.773)
+2022-08-03 18:15:12.837  INFO 22944 --- [http-nio-8080-exec-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-03 18:15:12.837  INFO 22944 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-03 18:15:12.838  INFO 22944 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-08-03 18:15:13.555  INFO 22944 --- [http-nio-8080-exec-7] com.example.demo.aspect.LogAspect        : 耿雪龙==>request:RequestLog{url='http://55q5c44072.zicp.fun/login/to_login', ip='127.0.0.1', classMethod='com.example.demo.controller.LoginPageController.to_login', args=[Ljava.lang.Object;@64d8ea7}
+2022-08-03 18:15:13.556  INFO 22944 --- [http-nio-8080-exec-7] com.example.demo.aspect.LogAspect        : -----进入LoginPageController类的to_login方法-------------------------------------
+2022-08-03 18:15:13.560  INFO 22944 --- [http-nio-8080-exec-7] com.example.demo.aspect.LogAspect        : -----完全出LoginPageController类的to_login方法-------------------------------------------
+2022-08-03 18:15:23.849  INFO 22944 --- [http-nio-8080-exec-8] com.example.demo.aspect.LogAspect        : 耿雪龙==>request:RequestLog{url='http://55q5c44072.zicp.fun/login/do_login', ip='127.0.0.1', classMethod='com.example.demo.controller.LoginPageController.login', args=[Ljava.lang.Object;@34f8bf79}
+2022-08-03 18:15:23.849  INFO 22944 --- [http-nio-8080-exec-8] com.example.demo.aspect.LogAspect        : -----进入LoginPageController类的login方法-------------------------------------
+2022-08-03 18:15:23.931  INFO 22944 --- [http-nio-8080-exec-8] com.example.demo.aspect.LogAspect        : -----完全出LoginPageController类的login方法-------------------------------------------
+2022-08-03 18:15:51.881  INFO 22944 --- [http-nio-8080-exec-10] com.example.demo.aspect.LogAspect        : 耿雪龙==>request:RequestLog{url='http://55q5c44072.zicp.fun/add/to_add', ip='127.0.0.1', classMethod='com.example.demo.controller.AddNewsPageController.to_add', args=[Ljava.lang.Object;@4427e922}
+2022-08-03 18:15:51.881  INFO 22944 --- [http-nio-8080-exec-10] com.example.demo.aspect.LogAspect        : -----进入AddNewsPageController类的to_add方法-------------------------------------
+2022-08-03 18:15:51.884  INFO 22944 --- [http-nio-8080-exec-10] com.example.demo.aspect.LogAspect        : -----完全出AddNewsPageController类的to_add方法-------------------------------------------
+2022-08-03 18:15:55.599  INFO 22944 --- [http-nio-8080-exec-3] com.example.demo.aspect.LogAspect        : 耿雪龙==>request:RequestLog{url='http://55q5c44072.zicp.fun/add/to_add', ip='127.0.0.1', classMethod='com.example.demo.controller.AddNewsPageController.to_add', args=[Ljava.lang.Object;@4afc601}
+2022-08-03 18:15:55.600  INFO 22944 --- [http-nio-8080-exec-3] com.example.demo.aspect.LogAspect        : -----进入AddNewsPageController类的to_add方法-------------------------------------
+2022-08-03 18:15:55.600  INFO 22944 --- [http-nio-8080-exec-3] com.example.demo.aspect.LogAspect        : -----完全出AddNewsPageController类的to_add方法-------------------------------------------
+2022-08-03 18:15:57.399  INFO 22944 --- [http-nio-8080-exec-4] com.example.demo.aspect.LogAspect        : 耿雪龙==>request:RequestLog{url='http://55q5c44072.zicp.fun/query/to_query', ip='127.0.0.1', classMethod='com.example.demo.controller.QueryNewsPageController.to_query', args=[Ljava.lang.Object;@889288f}
+2022-08-03 18:15:57.399  INFO 22944 --- [http-nio-8080-exec-4] com.example.demo.aspect.LogAspect        : -----进入QueryNewsPageController类的to_query方法-------------------------------------
+2022-08-03 18:15:57.402  INFO 22944 --- [http-nio-8080-exec-4] com.example.demo.aspect.LogAspect        : -----完全出QueryNewsPageController类的to_query方法-------------------------------------------
+2022-08-03 18:15:59.021  INFO 22944 --- [http-nio-8080-exec-7] com.example.demo.aspect.LogAspect        : 耿雪龙==>request:RequestLog{url='http://55q5c44072.zicp.fun/update/to_update', ip='127.0.0.1', classMethod='com.example.demo.controller.UpdateNewsPageController.to_update', args=[Ljava.lang.Object;@7b023395}
+2022-08-03 18:15:59.021  INFO 22944 --- [http-nio-8080-exec-7] com.example.demo.aspect.LogAspect        : -----进入UpdateNewsPageController类的to_update方法-------------------------------------
+2022-08-03 18:15:59.023  INFO 22944 --- [http-nio-8080-exec-7] com.example.demo.aspect.LogAspect        : -----完全出UpdateNewsPageController类的to_update方法-------------------------------------------
+2022-08-03 18:16:00.035  INFO 22944 --- [http-nio-8080-exec-9] com.example.demo.aspect.LogAspect        : 耿雪龙==>request:RequestLog{url='http://55q5c44072.zicp.fun/delete/to_delete', ip='127.0.0.1', classMethod='com.example.demo.controller.DeleteNewsPageController.to_delete', args=[Ljava.lang.Object;@561dbb9}
+2022-08-03 18:16:00.035  INFO 22944 --- [http-nio-8080-exec-9] com.example.demo.aspect.LogAspect        : -----进入DeleteNewsPageController类的to_delete方法-------------------------------------
+2022-08-03 18:16:00.038  INFO 22944 --- [http-nio-8080-exec-9] com.example.demo.aspect.LogAspect        : -----完全出DeleteNewsPageController类的to_delete方法-------------------------------------------
+2022-08-03 18:16:19.298  INFO 22944 --- [http-nio-8080-exec-1] com.example.demo.aspect.LogAspect        : 耿雪龙==>request:RequestLog{url='http://55q5c44072.zicp.fun/login/do_login', ip='127.0.0.1', classMethod='com.example.demo.controller.LoginPageController.login', args=[Ljava.lang.Object;@c185e18}
+2022-08-03 18:16:19.298  INFO 22944 --- [http-nio-8080-exec-1] com.example.demo.aspect.LogAspect        : -----进入LoginPageController类的login方法-------------------------------------
+2022-08-03 18:16:19.376  INFO 22944 --- [http-nio-8080-exec-1] com.example.demo.aspect.LogAspect        : -----完全出LoginPageController类的login方法-------------------------------------------
+2022-08-03 18:16:28.501  INFO 22944 --- [http-nio-8080-exec-5] com.example.demo.aspect.LogAspect        : 耿雪龙==>request:RequestLog{url='http://55q5c44072.zicp.fun/main/to_main', ip='127.0.0.1', classMethod='com.example.demo.controller.MainPageController.to_main', args=[Ljava.lang.Object;@1dfe793d}
+2022-08-03 18:16:28.502  INFO 22944 --- [http-nio-8080-exec-5] com.example.demo.aspect.LogAspect        : -----进入MainPageController类的to_main方法-------------------------------------
+2022-08-03 18:16:28.504  INFO 22944 --- [http-nio-8080-exec-5] com.example.demo.aspect.LogAspect        : -----完全出MainPageController类的to_main方法-------------------------------------------
+2022-08-03 18:16:33.014  INFO 22944 --- [http-nio-8080-exec-2] com.example.demo.aspect.LogAspect        : 耿雪龙==>request:RequestLog{url='http://55q5c44072.zicp.fun/main/to_main', ip='127.0.0.1', classMethod='com.example.demo.controller.MainPageController.to_main', args=[Ljava.lang.Object;@453b93f7}
+2022-08-03 18:16:33.014  INFO 22944 --- [http-nio-8080-exec-2] com.example.demo.aspect.LogAspect        : -----进入MainPageController类的to_main方法-------------------------------------
+2022-08-03 18:16:33.014  INFO 22944 --- [http-nio-8080-exec-2] com.example.demo.aspect.LogAspect        : -----完全出MainPageController类的to_main方法-------------------------------------------
+2022-08-03 18:22:45.974  INFO 5832 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 1.8.0_131 on DESKTOP-2R7Q184 with PID 5832 (D:\file for\file for java\java_javaEE\newPush2\target\classes started by Lenovo in D:\file for\file for java\java_javaEE\newPush2)
+2022-08-03 18:22:45.976  INFO 5832 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-08-03 18:22:46.590  INFO 5832 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-08-03 18:22:46.592  INFO 5832 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-08-03 18:22:46.625  INFO 5832 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+2022-08-03 18:22:47.197  INFO 5832 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-08-03 18:22:47.198  INFO 5832 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.33] using APR version [1.7.0].
+2022-08-03 18:22:47.199  INFO 5832 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-08-03 18:22:47.199  INFO 5832 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-08-03 18:22:47.201  INFO 5832 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1o  3 May 2022]
+2022-08-03 18:22:47.208  INFO 5832 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-03 18:22:47.209  INFO 5832 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-03 18:22:47.342  INFO 5832 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-03 18:22:47.342  INFO 5832 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1328 ms
+2022-08-03 18:22:48.329  WARN 5832 --- [main] com.zaxxer.hikari.HikariConfig           : gengxuelong_pool - idleTimeout is close to or more than maxLifetime, disabling it.
+2022-08-03 18:22:48.330  INFO 5832 --- [main] com.zaxxer.hikari.HikariDataSource       : gengxuelong_pool - Starting...
+2022-08-03 18:22:48.815  INFO 5832 --- [main] com.zaxxer.hikari.HikariDataSource       : gengxuelong_pool - Start completed.
+2022-08-03 18:22:49.145  INFO 5832 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-08-03 18:22:49.502  INFO 5832 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2022-08-03 18:22:49.509  INFO 5832 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2022-08-03 18:22:49.510  INFO 5832 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.2.2 created.
+2022-08-03 18:22:49.511  INFO 5832 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2022-08-03 18:22:49.512  INFO 5832 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.2.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2022-08-03 18:22:49.512  INFO 5832 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2022-08-03 18:22:49.512  INFO 5832 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.2.2
+2022-08-03 18:22:49.513  INFO 5832 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@5cff729b
+2022-08-03 18:22:49.565  INFO 5832 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-08-03 18:22:49.566  INFO 5832 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2022-08-03 18:22:49.566  INFO 5832 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2022-08-03 18:22:49.574  INFO 5832 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 3.963 seconds (JVM running for 4.823)
+2022-08-03 18:22:55.392  WARN 5832 --- [Timer-0] DICLOG                                   : not find library.properties in classpath use it by default !
+2022-08-03 18:22:55.393  WARN 5832 --- [Timer-0] DICLOG                                   : Init user library  error :library/default.dic because : not find that file !
+2022-08-03 18:22:55.393  WARN 5832 --- [Timer-0] DICLOG                                   : Init ambiguity library warning :library/ambiguity.dic because : file not found or failed to read !
+2022-08-03 18:22:55.393  WARN 5832 --- [Timer-0] DICLOG                                   : Init synonyms library warning :library/synonyms.dic because : file not found or failed to read !
+2022-08-03 18:22:55.394  INFO 5832 --- [Timer-0] DICLOG                                   : init deafult crf model begin !
+2022-08-03 18:22:56.274  INFO 5832 --- [Timer-0] CRF                                      : load crf model ok ! use time :879
+2022-08-03 18:22:56.547  INFO 5832 --- [Timer-0] DICLOG                                   : init core library ok use time :267
+2022-08-03 18:22:56.916  INFO 5832 --- [Timer-0] DICLOG                                   : init ngram ok use time :325
+2022-08-03 18:28:58.945  INFO 14560 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 1.8.0_131 on DESKTOP-2R7Q184 with PID 14560 (D:\file for\file for java\java_javaEE\newPush2\target\classes started by Lenovo in D:\file for\file for java\java_javaEE\newPush2)
+2022-08-03 18:28:58.948  INFO 14560 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-08-03 18:28:59.532  INFO 14560 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-08-03 18:28:59.534  INFO 14560 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-08-03 18:28:59.567  INFO 14560 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+2022-08-03 18:29:00.131  INFO 14560 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-08-03 18:29:00.132  INFO 14560 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.33] using APR version [1.7.0].
+2022-08-03 18:29:00.132  INFO 14560 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-08-03 18:29:00.132  INFO 14560 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-08-03 18:29:00.134  INFO 14560 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1o  3 May 2022]
+2022-08-03 18:29:00.141  INFO 14560 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-03 18:29:00.141  INFO 14560 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-03 18:29:00.278  INFO 14560 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-03 18:29:00.278  INFO 14560 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1299 ms
+2022-08-03 18:29:01.241  WARN 14560 --- [main] com.zaxxer.hikari.HikariConfig           : gengxuelong_pool - idleTimeout is close to or more than maxLifetime, disabling it.
+2022-08-03 18:29:01.243  INFO 14560 --- [main] com.zaxxer.hikari.HikariDataSource       : gengxuelong_pool - Starting...
+2022-08-03 18:29:01.715  INFO 14560 --- [main] com.zaxxer.hikari.HikariDataSource       : gengxuelong_pool - Start completed.
+2022-08-03 18:29:02.032  INFO 14560 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-08-03 18:29:02.375  INFO 14560 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2022-08-03 18:29:02.383  INFO 14560 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2022-08-03 18:29:02.383  INFO 14560 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.2.2 created.
+2022-08-03 18:29:02.384  INFO 14560 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2022-08-03 18:29:02.384  INFO 14560 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.2.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2022-08-03 18:29:02.384  INFO 14560 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2022-08-03 18:29:02.384  INFO 14560 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.2.2
+2022-08-03 18:29:02.385  INFO 14560 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@4602f874
+2022-08-03 18:29:02.436  INFO 14560 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-08-03 18:29:02.437  INFO 14560 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2022-08-03 18:29:02.437  INFO 14560 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2022-08-03 18:29:02.445  INFO 14560 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 3.869 seconds (JVM running for 4.67)
+2022-08-03 18:34:11.392  INFO 14560 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-03 18:34:11.392  INFO 14560 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-03 18:34:11.393  INFO 14560 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-08-03 18:34:12.199  INFO 14560 --- [http-nio-8080-exec-4] com.example.demo.aspect.LogAspect        : 耿雪龙==>request:RequestLog{url='http://55q5c44072.zicp.fun/login/to_login', ip='127.0.0.1', classMethod='com.example.demo.controller.LoginPageController.to_login', args=[Ljava.lang.Object;@2a1af9a8}
+2022-08-03 18:34:12.199  INFO 14560 --- [http-nio-8080-exec-4] com.example.demo.aspect.LogAspect        : -----进入LoginPageController类的to_login方法-------------------------------------
+2022-08-03 18:34:12.204  INFO 14560 --- [http-nio-8080-exec-4] com.example.demo.aspect.LogAspect        : -----完全出LoginPageController类的to_login方法-------------------------------------------
+2022-08-03 18:34:15.074  INFO 14560 --- [http-nio-8080-exec-2] com.example.demo.aspect.LogAspect        : 耿雪龙==>request:RequestLog{url='http://55q5c44072.zicp.fun/login/do_login', ip='127.0.0.1', classMethod='com.example.demo.controller.LoginPageController.login', args=[Ljava.lang.Object;@5e4d4d70}
+2022-08-03 18:34:15.074  INFO 14560 --- [http-nio-8080-exec-2] com.example.demo.aspect.LogAspect        : -----进入LoginPageController类的login方法-------------------------------------
+2022-08-03 18:34:15.074  INFO 14560 --- [http-nio-8080-exec-2] com.example.demo.aspect.LogAspect        : -----完全出LoginPageController类的login方法-------------------------------------------
+2022-08-03 18:34:15.193  INFO 14560 --- [http-nio-8080-exec-8] com.example.demo.aspect.LogAspect        : 耿雪龙==>request:RequestLog{url='http://55q5c44072.zicp.fun/login/to_login', ip='127.0.0.1', classMethod='com.example.demo.controller.LoginPageController.to_login', args=[Ljava.lang.Object;@3b59a1cf}
+2022-08-03 18:34:15.194  INFO 14560 --- [http-nio-8080-exec-8] com.example.demo.aspect.LogAspect        : -----进入LoginPageController类的to_login方法-------------------------------------
+2022-08-03 18:34:15.194  INFO 14560 --- [http-nio-8080-exec-8] com.example.demo.aspect.LogAspect        : -----完全出LoginPageController类的to_login方法-------------------------------------------
+2022-08-03 18:34:21.094  INFO 14560 --- [http-nio-8080-exec-9] com.example.demo.aspect.LogAspect        : 耿雪龙==>request:RequestLog{url='http://55q5c44072.zicp.fun/login/do_login', ip='127.0.0.1', classMethod='com.example.demo.controller.LoginPageController.login', args=[Ljava.lang.Object;@61bc703e}
+2022-08-03 18:34:21.094  INFO 14560 --- [http-nio-8080-exec-9] com.example.demo.aspect.LogAspect        : -----进入LoginPageController类的login方法-------------------------------------
+2022-08-03 18:34:26.123  WARN 14560 --- [http-nio-8080-exec-9] com.zaxxer.hikari.pool.PoolBase          : gengxuelong_pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@10a3e65c (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2022-08-03 18:34:31.126  WARN 14560 --- [http-nio-8080-exec-9] com.zaxxer.hikari.pool.PoolBase          : gengxuelong_pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2662ae23 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2022-08-03 18:34:36.136  WARN 14560 --- [http-nio-8080-exec-9] com.zaxxer.hikari.pool.PoolBase          : gengxuelong_pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3029608e (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2022-08-03 18:34:41.153  WARN 14560 --- [http-nio-8080-exec-9] com.zaxxer.hikari.pool.PoolBase          : gengxuelong_pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6549ec20 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2022-08-03 18:34:46.157  WARN 14560 --- [http-nio-8080-exec-9] com.zaxxer.hikari.pool.PoolBase          : gengxuelong_pool - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@56c6cc95 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2022-08-03 18:34:46.226  INFO 14560 --- [http-nio-8080-exec-9] com.example.demo.aspect.LogAspect        : -----完全出LoginPageController类的login方法-------------------------------------------
+2022-08-03 18:35:01.566  INFO 14560 --- [http-nio-8080-exec-1] com.example.demo.aspect.LogAspect        : 耿雪龙==>request:RequestLog{url='http://55q5c44072.zicp.fun/query/to_query', ip='127.0.0.1', classMethod='com.example.demo.controller.QueryNewsPageController.to_query', args=[Ljava.lang.Object;@827c7f5}
+2022-08-03 18:35:01.566  INFO 14560 --- [http-nio-8080-exec-1] com.example.demo.aspect.LogAspect        : -----进入QueryNewsPageController类的to_query方法-------------------------------------
+2022-08-03 18:35:01.570  INFO 14560 --- [http-nio-8080-exec-1] com.example.demo.aspect.LogAspect        : -----完全出QueryNewsPageController类的to_query方法-------------------------------------------
+2022-08-03 18:35:04.598  INFO 14560 --- [http-nio-8080-exec-4] com.example.demo.aspect.LogAspect        : 耿雪龙==>request:RequestLog{url='http://55q5c44072.zicp.fun/main/to_main', ip='127.0.0.1', classMethod='com.example.demo.controller.MainPageController.to_main', args=[Ljava.lang.Object;@5c9c6ed2}
+2022-08-03 18:35:04.598  INFO 14560 --- [http-nio-8080-exec-4] com.example.demo.aspect.LogAspect        : -----进入MainPageController类的to_main方法-------------------------------------
+2022-08-03 18:35:04.601  INFO 14560 --- [http-nio-8080-exec-4] com.example.demo.aspect.LogAspect        : -----完全出MainPageController类的to_main方法-------------------------------------------
+2022-08-03 18:35:06.801  INFO 14560 --- [http-nio-8080-exec-6] com.example.demo.aspect.LogAspect        : 耿雪龙==>request:RequestLog{url='http://55q5c44072.zicp.fun/update/to_update', ip='127.0.0.1', classMethod='com.example.demo.controller.UpdateNewsPageController.to_update', args=[Ljava.lang.Object;@7430f8ca}
+2022-08-03 18:35:06.801  INFO 14560 --- [http-nio-8080-exec-6] com.example.demo.aspect.LogAspect        : -----进入UpdateNewsPageController类的to_update方法-------------------------------------
+2022-08-03 18:35:06.804  INFO 14560 --- [http-nio-8080-exec-6] com.example.demo.aspect.LogAspect        : -----完全出UpdateNewsPageController类的to_update方法-------------------------------------------
+2022-08-03 18:35:09.055  INFO 14560 --- [http-nio-8080-exec-2] com.example.demo.aspect.LogAspect        : 耿雪龙==>request:RequestLog{url='http://55q5c44072.zicp.fun/main/to_main', ip='127.0.0.1', classMethod='com.example.demo.controller.MainPageController.to_main', args=[Ljava.lang.Object;@60f8e271}
+2022-08-03 18:35:09.055  INFO 14560 --- [http-nio-8080-exec-2] com.example.demo.aspect.LogAspect        : -----进入MainPageController类的to_main方法-------------------------------------
+2022-08-03 18:35:09.056  INFO 14560 --- [http-nio-8080-exec-2] com.example.demo.aspect.LogAspect        : -----完全出MainPageController类的to_main方法-------------------------------------------
+2022-08-03 18:35:10.663  INFO 14560 --- [http-nio-8080-exec-8] com.example.demo.aspect.LogAspect        : 耿雪龙==>request:RequestLog{url='http://55q5c44072.zicp.fun/delete/to_delete', ip='127.0.0.1', classMethod='com.example.demo.controller.DeleteNewsPageController.to_delete', args=[Ljava.lang.Object;@74a352ef}
+2022-08-03 18:35:10.664  INFO 14560 --- [http-nio-8080-exec-8] com.example.demo.aspect.LogAspect        : -----进入DeleteNewsPageController类的to_delete方法-------------------------------------
+2022-08-03 18:35:10.666  INFO 14560 --- [http-nio-8080-exec-8] com.example.demo.aspect.LogAspect        : -----完全出DeleteNewsPageController类的to_delete方法-------------------------------------------
+2022-08-03 18:35:11.979  INFO 14560 --- [http-nio-8080-exec-5] com.example.demo.aspect.LogAspect        : 耿雪龙==>request:RequestLog{url='http://55q5c44072.zicp.fun/main/to_main', ip='127.0.0.1', classMethod='com.example.demo.controller.MainPageController.to_main', args=[Ljava.lang.Object;@2f931cdb}
+2022-08-03 18:35:11.979  INFO 14560 --- [http-nio-8080-exec-5] com.example.demo.aspect.LogAspect        : -----进入MainPageController类的to_main方法-------------------------------------
+2022-08-03 18:35:11.979  INFO 14560 --- [http-nio-8080-exec-5] com.example.demo.aspect.LogAspect        : -----完全出MainPageController类的to_main方法-------------------------------------------
+2022-08-03 18:35:13.685  INFO 14560 --- [http-nio-8080-exec-7] com.example.demo.aspect.LogAspect        : 耿雪龙==>request:RequestLog{url='http://55q5c44072.zicp.fun/query/to_query', ip='127.0.0.1', classMethod='com.example.demo.controller.QueryNewsPageController.to_query', args=[Ljava.lang.Object;@342a15e4}
+2022-08-03 18:35:13.685  INFO 14560 --- [http-nio-8080-exec-7] com.example.demo.aspect.LogAspect        : -----进入QueryNewsPageController类的to_query方法-------------------------------------
+2022-08-03 18:35:13.685  INFO 14560 --- [http-nio-8080-exec-7] com.example.demo.aspect.LogAspect        : -----完全出QueryNewsPageController类的to_query方法-------------------------------------------
+2022-08-03 18:35:18.456  INFO 14560 --- [http-nio-8080-exec-1] com.example.demo.aspect.LogAspect        : 耿雪龙==>request:RequestLog{url='http://55q5c44072.zicp.fun/add/to_add', ip='127.0.0.1', classMethod='com.example.demo.controller.AddNewsPageController.to_add', args=[Ljava.lang.Object;@475eabdf}
+2022-08-03 18:35:18.456  INFO 14560 --- [http-nio-8080-exec-1] com.example.demo.aspect.LogAspect        : -----进入AddNewsPageController类的to_add方法-------------------------------------
+2022-08-03 18:35:18.460  INFO 14560 --- [http-nio-8080-exec-1] com.example.demo.aspect.LogAspect        : -----完全出AddNewsPageController类的to_add方法-------------------------------------------
+2022-08-03 18:36:40.019  INFO 14560 --- [http-nio-8080-exec-5] com.example.demo.aspect.LogAspect        : 耿雪龙==>request:RequestLog{url='http://55q5c44072.zicp.fun/query/to_query', ip='127.0.0.1', classMethod='com.example.demo.controller.QueryNewsPageController.to_query', args=[Ljava.lang.Object;@14b9639b}
+2022-08-03 18:36:40.019  INFO 14560 --- [http-nio-8080-exec-5] com.example.demo.aspect.LogAspect        : -----进入QueryNewsPageController类的to_query方法-------------------------------------
+2022-08-03 18:36:40.019  INFO 14560 --- [http-nio-8080-exec-5] com.example.demo.aspect.LogAspect        : -----完全出QueryNewsPageController类的to_query方法-------------------------------------------
+2022-08-03 18:36:46.576  INFO 14560 --- [http-nio-8080-exec-7] com.example.demo.aspect.LogAspect        : 耿雪龙==>request:RequestLog{url='http://55q5c44072.zicp.fun/modify/to_modify', ip='127.0.0.1', classMethod='com.example.demo.controller.ModifyAdminPageController.to_modify', args=[Ljava.lang.Object;@50564198}
+2022-08-03 18:36:46.577  INFO 14560 --- [http-nio-8080-exec-7] com.example.demo.aspect.LogAspect        : -----进入ModifyAdminPageController类的to_modify方法-------------------------------------
+2022-08-03 18:36:46.579  INFO 14560 --- [http-nio-8080-exec-7] com.example.demo.aspect.LogAspect        : -----完全出ModifyAdminPageController类的to_modify方法-------------------------------------------
+2022-08-03 18:36:48.402  INFO 14560 --- [http-nio-8080-exec-1] com.example.demo.aspect.LogAspect        : 耿雪龙==>request:RequestLog{url='http://55q5c44072.zicp.fun/update/to_update', ip='127.0.0.1', classMethod='com.example.demo.controller.UpdateNewsPageController.to_update', args=[Ljava.lang.Object;@325be4b0}
+2022-08-03 18:36:48.402  INFO 14560 --- [http-nio-8080-exec-1] com.example.demo.aspect.LogAspect        : -----进入UpdateNewsPageController类的to_update方法-------------------------------------
+2022-08-03 18:36:48.403  INFO 14560 --- [http-nio-8080-exec-1] com.example.demo.aspect.LogAspect        : -----完全出UpdateNewsPageController类的to_update方法-------------------------------------------
+2022-08-03 18:36:51.962  INFO 14560 --- [http-nio-8080-exec-3] com.example.demo.aspect.LogAspect        : 耿雪龙==>request:RequestLog{url='http://55q5c44072.zicp.fun/delete/to_delete', ip='127.0.0.1', classMethod='com.example.demo.controller.DeleteNewsPageController.to_delete', args=[Ljava.lang.Object;@6f4d5c18}
+2022-08-03 18:36:51.962  INFO 14560 --- [http-nio-8080-exec-3] com.example.demo.aspect.LogAspect        : -----进入DeleteNewsPageController类的to_delete方法-------------------------------------
+2022-08-03 18:36:51.962  INFO 14560 --- [http-nio-8080-exec-3] com.example.demo.aspect.LogAspect        : -----完全出DeleteNewsPageController类的to_delete方法-------------------------------------------
+2022-08-03 18:36:53.072  INFO 14560 --- [http-nio-8080-exec-6] com.example.demo.aspect.LogAspect        : 耿雪龙==>request:RequestLog{url='http://55q5c44072.zicp.fun/query/to_query', ip='127.0.0.1', classMethod='com.example.demo.controller.QueryNewsPageController.to_query', args=[Ljava.lang.Object;@31675763}
+2022-08-03 18:36:53.072  INFO 14560 --- [http-nio-8080-exec-6] com.example.demo.aspect.LogAspect        : -----进入QueryNewsPageController类的to_query方法-------------------------------------
+2022-08-03 18:36:53.072  INFO 14560 --- [http-nio-8080-exec-6] com.example.demo.aspect.LogAspect        : -----完全出QueryNewsPageController类的to_query方法-------------------------------------------
+2022-08-03 18:36:57.551  INFO 14560 --- [http-nio-8080-exec-9] com.example.demo.aspect.LogAspect        : 耿雪龙==>request:RequestLog{url='http://55q5c44072.zicp.fun/add/to_add', ip='127.0.0.1', classMethod='com.example.demo.controller.AddNewsPageController.to_add', args=[Ljava.lang.Object;@10b51d6c}
+2022-08-03 18:36:57.552  INFO 14560 --- [http-nio-8080-exec-9] com.example.demo.aspect.LogAspect        : -----进入AddNewsPageController类的to_add方法-------------------------------------
+2022-08-03 18:36:57.552  INFO 14560 --- [http-nio-8080-exec-9] com.example.demo.aspect.LogAspect        : -----完全出AddNewsPageController类的to_add方法-------------------------------------------
+2022-08-03 18:37:02.317  INFO 14560 --- [http-nio-8080-exec-2] com.example.demo.aspect.LogAspect        : 耿雪龙==>request:RequestLog{url='http://55q5c44072.zicp.fun/user/to_user', ip='127.0.0.1', classMethod='com.example.demo.controller.UserPageController.to_user', args=[Ljava.lang.Object;@2cd76427}
+2022-08-03 18:37:02.317  INFO 14560 --- [http-nio-8080-exec-2] com.example.demo.aspect.LogAspect        : -----进入UserPageController类的to_user方法-------------------------------------
+2022-08-03 18:37:02.392  INFO 14560 --- [http-nio-8080-exec-2] com.example.demo.aspect.LogAspect        : -----完全出UserPageController类的to_user方法-------------------------------------------

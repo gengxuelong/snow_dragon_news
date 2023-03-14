@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head lang="en" th:insert="~{main::head}"></head>
+<body>
+<!--头部-->
+<div th:insert="main::head2"></div>
+<!--主体内容-->
+<section class="publicMain">
+	<div class="left" th:insert="main::left"></div>
+
+	 <div class="right">
+	      <div class="location">
+	          <strong>你现在所在的位置是:</strong>
+	          <span>新闻管理页面 >> 新闻修改页面</span>
+	      </div>
+	      <div class="newsAdd">
+	          <form id="newsForm" name="newsForm" method="post" th:action="@{/update/update_news}">
+				  <p style="color:red;  text-align: center;" th:text="${msg}" th:if="${not #strings.isEmpty(msg)}"></p>
+				  <input type="hidden" name="method" value="update">
+	              <div>
+	                  <label for="newsCode">新闻编号：</label>
+	                  <input type="text" name="id" class="text" id="newsCode" value="">
+	              </div>
+	              <div>
+	                  <label for="productName">修改后的新闻标题：</label>
+	                  <input type="text" name="title" id="productName" value="">
+	              </div>
+				  <div>
+					  <label for="tagName">修改后新闻类型：</label>
+					  <select id="tagName" name="tag">
+						  <option value="" selected>--请选择---</option>
+						  <option value="科技">科技</option>
+						  <option value="股票">股票</option>
+						  <option value="体育">体育</option>
+						  <option value="娱乐">娱乐</option>
+						  <option value="社会">社会</option>
+						  <option value="时政">时政</option>
+						  <option value="教育">教育</option>
+						  <option value="财经">财经</option>
+						  <option value="家居">家居</option>
+						  <option value="游戏">游戏</option>
+						  <option value="彩票">彩票</option>
+						  <option value="房产">房产</option>
+						  <option value="时尚">时尚</option>
+						  <option value="星座">星座</option>
+						  <option value="热点">热点</option>
+					  </select>
+				  </div>
+	              <div>
+	                  <label for="productUnit">修改后的新闻正文：</label>
+	                  <textarea  name="article" id="productUnit" value="" style="width: 400px;height: 300px;"> </textarea>
+	              </div>
+				  
+	             
+	              <div class="newsAddBtn">
+	                   <input type="submit" name="update" id="add" value="提交">
+	 				  <button type="button" id="back" name="back"><a th:href = "@{/main/to_main}">返回</a></button>
+	              </div>
+	          </form>
+	      </div>
+	  </div>
+	 </section>
+	 <script type="text/javascript" src="js/newsadd.js"></script>
+	</section>
+	
+	
+
+	
+	<footer class="footer" th:insert="~{main::footer}"></footer>
+	</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head lang="en" th:insert="~{main::head}"></head>
+<body>
+<!--头部-->
+<div th:fragment="head2">
+    <header class="publicHeader" >
+        <h1>听我说谢谢你新闻控制台</h1>
+        <div class="publicHeaderR">
+            <p><span>下午好！</span><span style="color: #fff21b">[[${session.loginUser}]]</span> , 欢迎你！</p>
+            <a th:href="@{index1.html}">退出</a>
+        </div>
+    </header>
+    <section class="publicTime">
+        <span id="Clock"></span><!-- 由js函数每隔一秒重写一次span的HTML内容 -->
+        <a onclick="history.back(-1)"><button  href="#" style="border: 2px blue; color: #0a5eb6" >返回</button></a>
+        <a href="#">温馨提示：为了能正常浏览，请使用高版本浏览器！（IE10+）</a>
+    </section>
+</div>
+<!--主体内容-->
+<section class="publicMain">
+    <div class="left" th:insert="main::left"></div>
+<!--
+    <div><button style="color: #0a5eb6" onclick="javascript:history.back(-1)">返回</button></div>
+    <div><hr/></div>-->
+    <textarea th:text="${text}" style="width: 100%"></textarea>
+
+</section>
+<script type="text/javascript" src="js/newsadd.js"></script>
+</section>
+<footer class="footer" th:insert="~{main::footer}"></footer>
+</body>
+</html>

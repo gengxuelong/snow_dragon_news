@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<c3p0-config>
+    <!-- 文件名字是固定的，连接池会找到这个配置文件进行配置 -->
+    <default-config>
+        <!--第一条内容是固定的-->
+        <property name="driverClass">com.mysql.cj.jdbc.Driver</property>
+        <!--最后一项改成你的数据库名字即可,我这里之前总是连接不上,改成三个 /// 后发现连接成功-->
+        <property name="jdbcUrl">jdbc:mysql://121.4.33.213:3306/news</property>
+        <!--mysql的用户名和密码-->
+        <property name="user">news</property>
+        <property name="password">news</property>
+    </default-config>
+</c3p0-config>

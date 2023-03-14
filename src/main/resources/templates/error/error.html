@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>错误</title>
+</head>
+<body>
+    <h1 style="color: red">错误</h1>
+    <h3 style="color: #7ba92c">错误详情如下(自定义错误展示页面，供本项目开发者阅览纠错）: </h3>
+    <div>
+        <p >failed reqeust url :<span style="color: #0042a8;" th:text="${url}"></span></p>
+        <p >exception message :<span style="color: #0042a8;" th:text="  ${exceptionMessage}"></span></p>
+        <span>exception.stackTrace:</span>
+        <ul>
+            <li style="color: #406e99" th:each="st:${exceptionStack}"><span th:text="${st}"></span></li>
+        </ul>
+    </div>
+
+</body>
+</html>

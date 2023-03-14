@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head lang="en" th:insert="~{main::head}"></head>
+<body>
+<!--头部-->
+<div th:insert="main::head2"></div>
+<!--主体内容-->
+<section class="publicMain">
+    <div class="left" th:insert="main::left"></div>
+	
+	<div class="right">
+	      <div class="location">
+	          <strong>你现在所在的位置是:</strong>
+	          <span>新闻管理页面 >> 新闻删除页面</span>
+	      </div>
+	      <div class="newsAdd">
+	          <form id="newsForm" name="newsForm" method="post" th:action="@{/delete/delete_news}">
+				  <p style="color:red;  text-align: center;" th:text="${msg}" th:if="${not #strings.isEmpty(msg)}"></p>
+	              <input type="hidden" name="method" value="Delete">
+	              <div>
+	                  <label for="newsCode">新闻编号：</label>
+	                  <input type="text" name="id" class="text" id="newsCode" value="">
+	              </div>
+	             
+                  <div class="newsAddBtn">
+	                   <input type="submit" name="add" id="add" value="删除">
+	 				  <button type="button" id="back" name="back"><a th:href = "@{/main/to_main}">返回</a></button>
+	              </div>
+	          </form>
+	      </div>
+	  </div>
+	 
+	 
+	</section>
+
+
+
+<footer class="footer" th:insert="~{main::footer}"></footer>
+	</body>
+</html>

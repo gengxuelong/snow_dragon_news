@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head lang="en" th:insert="~{main::head}"></head>
+<body>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+<!--头部-->
+<div th:insert="main::head2"></div>
+<!--主体内容-->
+<section class="publicMain">
+	<div class="left" th:insert="main::left"></div>
+	<div class="right">
+	       <div class="location">
+	           <strong>你现在所在的位置是:</strong>
+	           <span>新闻管理页面>>订单管理页面</span>
+	       </div>
+
+	       <div class="search">
+			   <form method="post" th:action="@{/query/query_by_id}">
+				   <span>新闻编号：</span>
+				   <input name="id" type="text" value=" ">
+				   <input	value="查 询" type="submit" id="searchbutton" required>
+			   </form>
+		   </div>
+
+		<div class="search">
+			   <form method="post" th:action="@{/query/query_by_title_like}">
+				   <span>新闻标题：</span>
+				   <input name="title" type="text" value="">
+				   <input style="font-size: 15px"	value="查询(模糊)" type="submit" id="searchbutton" required>
+			   </form>
+		</div>
+
+			<div class="search">
+			   <form method="post" th:action="@{/query/query_by_tag}">
+				   <label for="tagName">新闻类型：</label>
+				   <select id="tagName" name="tag" style="width: 195px">
+					   <option value="" selected>--请选择---</option>
+					   <option value="科技">科技</option>
+					   <option value="股票">股票</option>
+					   <option value="体育">体育</option>
+					   <option value="娱乐">娱乐</option>
+					   <option value="社会">社会</option>
+					   <option value="时政">时政</option>
+					   <option value="教育">教育</option>
+					   <option value="财经">财经</option>
+					   <option value="家居">家居</option>
+					   <option value="游戏">游戏</option>
+					   <option value="彩票">彩票</option>
+					   <option value="房产">房产</option>
+					   <option value="时尚">时尚</option>
+					   <option value="星座">星座</option>
+					   <option value="热点">热点</option>
+				   </select>
+				   <input	value="查 询" type="submit"  id="searchbutton">
+				   <a th:href="@{/add/to_add}">添加</a>
+				    <a th:href="@{/main/to_main}">返回</a>
+			   </form>
+	       </div>
+
+
+		<div style="margin-top: 10px;margin-bottom: 10px"><hr></div>
+
+		<div style="margin-top: 10px">
+	       <!--账单表格 样式和供应商公用-->
+	      <table class="newsTable" cellpadding="0" cellspacing="0">
+	          <tr class="firstTr">
+	              <th width="20%">新闻编号</th>
+	              <th width="40%">新闻标题</th>
+	              <th width="20%">新闻类型</th>
+	              <th width="20%">正文与操作</th>
+	          </tr>
+					<tr th:each="news : ${session.newsList}">
+						<td>
+						<span>[[${news.id}]]</span>
+						</td>
+						<td>
+						<span>[[${news.title}]]</span>
+						</td>
+						<td>
+						<span>[[${news.tag}]]</span>
+						</td>
+						<td>
+							<span><a style="margin-bottom: 5px"  th:href="@{/query/to_zhengwen/}+${news.id}"><button style="color:cadetblue; width: 60px;height: 30px;text-align: center; font-size: 14px;border: 10px blue;border-radius: 8px;">正文</button></a></span>
+							<span><a style="margin-bottom: 5px"  th:href="@{/query/delete/}+${news.id}"><button style="color:red; width: 60px;height: 30px;text-align: center; font-size: 14px;border: 10px blue;border-radius: 8px;">删除</button></a></span>
+						</td>
+					</tr>
+	      </table>
+		</div>
+		<div>
+			<form id = "footer_form" th:action="@{/query/jump}" method="post">
+				<button><a th:href="@{/query/jump/last}">上一页</a></button>
+			<font>共</font><font>[[${session.yeshu}]]</font><font>页；</font><font>当前第</font><font>[[${session.yejiao}]]</font><font>页；</font>
+				<button><a th:href="@{/query/jump/next}">下一页</a></button>
+			<input name = "yejiao" type="number" th:max="${session.yeshu}">
+				<input  class="ui submit mini teal button" type="submit"  style="width: 4em !important;" value="跳转" >
+		    </form>
+		</div>
+	</div>
+	 
+	 
+	 
+	 
+	 
+	</section>
+
+
+
+
+<footer class="footer" th:insert="~{main::footer}"></footer>
+<script>
+	$('#footer_form').form({
+		fields: {
+			yejiao : {
+				identifier: 'yejiao',
+				rules: [
+					{
+						type: 'empty',
+						prompt: '请输入跳转页数'
+					}
+				]
+			}
+		}
+	})
+</script>
+	</body>
+
+</html>

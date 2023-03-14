@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head lang="en" th:insert="~{main::head}"></head>
+<body>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+<!--头部-->
+<div th:insert="main::head2"></div>
+<!--主体内容-->
+<section class="publicMain">
+    <div class="left" th:insert="main::left"></div>
+    <div class="right">
+        <div class="location">
+            <strong>你现在所在的位置是:</strong>
+            <span>新闻管理页面>>用户信息</span>
+        </div>
+
+
+
+        <div style="margin-top: 10px;margin-bottom: 10px"><hr></div>
+
+        <div style="margin-top: 10px">
+            <!--账单表格 样式和供应商公用-->
+            <table class="newsTable" cellpadding="0" cellspacing="0">
+                <tr class="firstTr">
+                    <th width="20%">用户手机号</th>
+                    <th width="40%">最近登录时间</th>
+                    <th width="20%">用户名称</th>
+                    <th width="20%">操作</th>
+                </tr>
+                <tr th:if="${userList!=null}" th:each="user:${userList}">
+                    <td>
+                        <span>[[${user.getId()}]]</span>
+                    </td>
+                    <td>
+                        <span>[[${user.getLatest_log_time()}]]</span>
+                    </td>
+                    <td>
+                        <span>[[${user.getName()}]]</span>
+                    </td>
+                    <td>
+                        <span><a style="margin-bottom: 5px"  th:href="@{/user/delete/}+${user.id}"><button style="color:red; width: 60px;height: 30px;text-align: center; font-size: 14px;border: 10px blue;border-radius: 8px;">删除</button></a></span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+
+
+
+</section>
+
+
+
+
+<footer class="footer" th:insert="~{main::footer}"></footer>
+<script>
+    $('#footer_form').form({
+        fields: {
+            yejiao : {
+                identifier: 'yejiao',
+                rules: [
+                    {
+                        type: 'empty',
+                        prompt: '请输入跳转页数'
+                    }
+                ]
+            }
+        }
+    })
+</script>
+</body>
+
+</html>

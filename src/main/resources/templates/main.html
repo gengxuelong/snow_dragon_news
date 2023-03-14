@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="head">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>听我说谢谢你新闻控制台</title>
+    <!-- Bootstrap core CSS -->
+    <link th:href="@{/css/public.css}" rel="stylesheet" type="text/css">
+    <!-- Custom styles for this template -->
+    <link th:href="@{/css/style.css}" rel="stylesheet" type="text/css">
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <script>
+        function tick() {
+            var today=new Date();
+            var month=today.getMonth()+1;<!--getMonth显示当前月份-1，所以要+1才能显示当前月份-->
+            var year, date, hours, minutes, seconds;
+            var intHours, intMinutes, intSeconds;
+            var week=new Array()
+            // 显示几天为星期几
+            week[0]="星期天 ";
+            week[1]="星期一 ";
+            week[2]="星期二 ";
+            week[3]="星期三 ";
+            week[4]="星期四 ";
+            week[5]="星期五 ";
+            week[6]="星期六 ";
+            intHours = today.getHours();
+            intMinutes = today.getMinutes();
+            intSeconds = today.getSeconds();
+            year=today.getFullYear();
+            date=today.getDate();
+            var time;
+            if (intHours == 0) {
+                hours = "00:";
+            }
+            else if (intHours < 10) {
+                hours = "0" + intHours+":";
+            }
+            else {
+                hours = intHours + ":";
+            }
+            if (intMinutes < 10) {
+                minutes = "0"+intMinutes+":";
+            }
+            else {
+                minutes = intMinutes+":";
+            }
+            if (intSeconds < 10) {
+                seconds = "0"+intSeconds+" ";
+            }
+            else {
+                seconds = intSeconds+" ";
+            }
+//根据不同的时间显示不同的问候。
+//下面采用自己总结的测试纠正法对time进行赋值
+            time="午夜好";
+            if(today.getHours()<=22)  time="晚上好";
+            if(today.getHours()<=19)  time="傍晚好";
+            if(today.getHours()<=17)  time="下午好";
+            if(today.getHours()<=14)  time="中午好";
+            if(today.getHours()<=12)  time="上午好";
+            if(today.getHours()<=8)   time="早上好";
+            if(today.getHours()<=5)   time="凌晨好";
+            timeString="今天是："+year+"年"+month+"月"+date+"日  "+hours+minutes+seconds+week[today.getDay()]+time;
+            Clock.innerHTML = timeString;
+            window.setTimeout("tick();", 1000);
+        }
+        window.onload = tick;
+    </script>
+</head>
+
+<body>
+<!--头部-->
+<div th:fragment="head2">
+    <header class="publicHeader" >
+        <h1>听我说谢谢你新闻控制台</h1>
+        <div class="publicHeaderR">
+            <p><span>下午好！</span><span style="color: #fff21b">[[${session.username}]]</span> , 欢迎你！</p>
+            <a th:href="@{/login/to_login}">退出</a>
+        </div>
+    </header>
+    <section class="publicTime">
+        <span id="Clock"></span><!-- 由js函数每隔一秒重写一次span的HTML内容 -->
+        <a href="#">温馨提示：为了能正常浏览，请使用高版本浏览器！（IE10+）</a>
+    </section>
+</div>
+ <!--主体内容-->
+   <section class="publicMain">
+     <div class="left" th:fragment="left">
+         <h2 class="leftH2"><span class="span1"></span>功能列表 <span></span></h2>
+         <nav>
+             <ul class="list">
+              <li><a th:href="@{/add/to_add}">添加新闻</a></li>
+              <li><a th:href="@{/query/to_query}">查询新闻</a></li>
+              <li><a th:href="@{/delete/to_delete}">删除新闻</a></li>
+			  <li><a th:href="@{/update/to_update}">修改新闻</a></li>
+              <li><a th:href="@{/modify/to_modify}">密码修改</a></li>
+              <li><a th:href="@{/user/to_user}">用户信息</a></li>
+              <li><a th:href="@{/login/to_login}">退出系统</a></li>
+             </ul>
+         </nav>
+     </div>
+	</section>
+	
+
+
+
+
+
+
+
+
+
+
+	<footer class="footer" th:fragment="footer">
+	    听我说谢谢你新闻控制台
+	</footer>
+	
+	</body>
+</html>

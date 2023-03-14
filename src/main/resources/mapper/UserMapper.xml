@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.UserMapper">
+    <insert id="addUser" parameterType="UserEntity">
+        insert into users value (#{id},#{pref_list},#{latest_log_time},#{name})
+    </insert>
+    <insert id="deleteUser" parameterType="long">
+        delete from users where id = #{id}
+    </insert>
+    <select id="getAll" resultType="UserEntity">
+        select * from users
+    </select>
+
+</mapper>
